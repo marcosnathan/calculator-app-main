@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/default.css">
+  <link rel="stylesheet" href="assets/css/theme-1.css" id="theme">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main">
+    <div class="title-bar">
+      <h3 class="title-bar__title title-bar__title--calc">calc</h3>
+      <div class="title-bar__row title-bar__row--theme">
+        <span class="title-bar__theme title-bar__theme--theme">THEME</span>
+        <div class="title-bar__column">
+          <div class="title-bar__row title-bar__theme--options">
+            <span class="theme--options--number">1</span>
+            <span class="theme--options--number">2</span>
+            <span class="theme--options--number">3</span>
+          </div>
+          <div class="title-bar__row title__bar--rbbox">
+            <label for="theme-1">
+              <input class="theme__switcher" type="radio" checked name="theme-option" id="theme-1" value="theme-1">
+              <span class="custom-radio"></span>
+            </label>
+
+            <label for="theme-2">
+              <input class="theme__switcher" type="radio" name="theme-option" id="theme-2" value="theme-2">
+              <span class="custom-radio"></span>
+            </label>
+
+            <label for="theme-3">
+              <input class="theme__switcher" type="radio" name="theme-option" id="theme-3" value="theme-3">
+              <span class="custom-radio"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacing"></div>
+    <div class="display">
+      <input class="display__content display__content--theme" dir="rtl"  name="display" id="display" value="0">
+    </div>
+    <div class="spacing"></div>
+    <div class="calculator-grid calculator-grid--theme">
+      <button class="calculator-grid__button calculator-grid__button--number" id="number-7">7</button>
+      <button class="calculator-grid__button calculator-grid__button--number" id="number-8">8</button>
+      <button class="calculator-grid__button calculator-grid__button--number" id="number-9">9</button>
+      <button class="calculator-grid__button calculator-grid__button--del" id="btn-del">DEL</button>
+
+      <button class="calculator-grid__button calculator-grid__button--number" id="number-4">4</button>
+      <button class="calculator-grid__button calculator-grid__button--number" id="number-5">5</button>
+      <button class="calculator-grid__button calculator-grid__button--number" id="number-6">6</button>
+      <button class="calculator-grid__button calculator-grid__button--number" id="btn-plus">+</button>
+
+      <button class="calculator-grid__button calculator-grid__button--number" id="number-1">1</button>
+      <button class="calculator-grid__button calculator-grid__button--number" id="number-2">2</button>
+      <button class="calculator-grid__button calculator-grid__button--number" id="number-3">3</button>
+      <button class="calculator-grid__button calculator-grid__button--number" id="btn-minor">-</button>
+      
+      <button class="calculator-grid__button calculator-grid__button--number"id="btn-dot" >.</button>
+      <button class="calculator-grid__button calculator-grid__button--number" id="number-0">0</button>
+      <button class="calculator-grid__button calculator-grid__button--number" id="btn-divide">/</button>
+      <button class="calculator-grid__button calculator-grid__button--number" id="btn-cross">x</button>
+
+      <button class="calculator-grid__button calculator-grid__button--reset" id="btn-reset">RESET</button>
+      <button class="calculator-grid__button calculator-grid__button--equal" id="btn-equal">=</button>
+    </div>
+  </main>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

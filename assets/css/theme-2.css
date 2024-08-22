@@ -1,0 +1,91 @@
+:root {
+    /* Colors */
+    /* Theme 2 */
+    --main-bg: hsl(0, 0%, 90%); /* main background */
+    --toggle-bg: hsl(0, 5%, 81%); /* toggle background, keypad background */
+    --screen-bg: hsl(0, 0%, 93%); /* screen background */
+
+    --key-bg: hsl(185, 42%, 37%); /* key background */
+    --key-shadow: hsl(185, 58%, 25%); /* key shadow */
+    --key-hover: hsl(185, 58%, 45%);
+    --btn-equal-color: hsl(25, 98%, 40%); /* equal key background and toggle */
+    --btn-equal-hover-color: hsl(25, 98%, 60%);
+    --btn-equal-shadow-color: hsl(25, 99%, 27%); /* key shadow */
+    --keys-number-bg: hsl(45, 7%, 89%); /* key background */
+    --keys-number-shadow: hsl(35, 11%, 61%); /* key shadow */
+
+    --keys-number-color: hsl(60, 10%, 19%);
+    --white-color: hsl(0, 0%, 100%);
+
+    --display-text-color: hsl(60, 10%, 19%);
+}
+
+body {
+    background-color: var(--main-bg);
+}
+
+.custom-radio::after {
+    background-color: var(--btn-equal-color);
+}
+
+.title__bar--rbbox {
+    background-color: var(--toggle-bg);
+}
+
+.title-bar__title--calc,
+.title-bar__theme--theme,
+.theme--options--number{
+    color: var(--keys-number-color);
+}
+
+.display__content--theme {
+    background-color: var(--screen-bg);
+    color: var(--display-text-color);
+}
+
+.calculator-grid--theme {
+    background-color: var(--toggle-bg);
+}
+
+.calculator-grid__button--number {
+    background-color: var(--keys-number-bg);
+}
+
+.calculator-grid__button {
+    cursor: pointer;
+    box-shadow: 0 .2rem var(--keys-number-shadow);
+    color: var(--keys-number-color);
+}
+
+.calculator-grid__button--del,
+.calculator-grid__button--reset{
+    background-color: var(--key-bg);
+    color: var(--white-color);
+    box-shadow: 0 .2rem var(--key-shadow);
+    
+}
+
+.calculator-grid__button--equal {
+    color: var(--white-color);
+    background-color: var(--btn-equal-color);
+    box-shadow: 0 .2rem var(--btn-equal-shadow-color);
+}
+
+/* STATES */
+.calculator-grid__button--del:hover,
+.calculator-grid__button--reset:hover {
+    background-color:var(--key-hover);
+    transition: 0.2s;
+}
+
+.calculator-grid__button--equal:hover {
+    background-color:var(--btn-equal-hover-color);
+    transition: 0.2s;
+}
+
+.calculator-grid__button--number:hover {
+    background-color:var(--white-color);
+    transition: 0.2s;
+}
+
+
