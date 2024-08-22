@@ -113,11 +113,12 @@ textarea:not([rows]) {
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
 .main {
-  margin: 2rem 1.5rem;
+  margin: 0 1.5rem;
   max-width: 24rem;
   display: flex;
   flex-direction: column;
@@ -222,11 +223,12 @@ body {
 .calculator-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(50px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr auto;
   padding: 1rem;
   grid-template-rows: auto auto auto auto;
   border-radius: .5rem;
   gap: 1rem .5rem;
-  flex: 1
+  flex: 1;
   
 }
 
