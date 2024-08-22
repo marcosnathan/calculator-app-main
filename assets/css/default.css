@@ -119,6 +119,8 @@ body {
 .main {
   margin: 2rem 1.5rem;
   max-width: 24rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .title-bar {
@@ -220,9 +222,11 @@ body {
 .calculator-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(50px, 1fr));
-  padding: 1rem ;
+  padding: 1rem;
+  grid-template-rows: auto auto auto auto;
   border-radius: .5rem;
   gap: 1rem .5rem;
+  flex: 1
   
 }
 
@@ -251,6 +255,13 @@ body {
   padding-top: 0;
   font-size: medium;
 }
+
+/* @media screen and (max-height: 530px) {
+  .calculator-grid {
+    
+
+  }
+} */
 
 
 @media screen and (min-width: 24rem) {
